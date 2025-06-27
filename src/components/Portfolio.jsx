@@ -71,64 +71,73 @@ const Portfolio = () => {
     },
   ]
 
-  const projects = [
-    {
-      title: "Placement Portal",
-      description:
-        "Created a full-stack placement portal that streamlined applications for over 500 students and 100+ companies. Enabled real-time tracking, CGPA validation, and resume uploads, reducing student follow-up by 30%.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgrXYyF-J7ZA-gABudMyhVBM23d9nCxlaDw&s",
-      tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-      features: [
-        "Real-time application tracking",
-        "CGPA validation system",
-        "Resume upload functionality",
-        "Company dashboard",
-        "Student analytics"
-      ]
-    },
-    {
-      title: "BookStore Management",
-      description:
-        "Designed a comprehensive portal for displaying book availability and managing order summaries. Features include inventory management, customer order tracking, and detailed sales analytics for bookstore operations.",
-      image: "https://static.vecteezy.com/system/resources/previews/015/411/157/non_2x/a-bookstore-with-a-sign-over-the-entrance-books-in-the-shop-window-on-the-shelves-street-store-illustration-flat-style-vector.jpg",
-      tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
-      features: [
-        "Book inventory management",
-        "Order tracking system",
-        "Sales analytics dashboard",
-        "Customer management",
-        "Cart Options"
-      ]
-    },
-    {
-      title: "Movie Analyzer",
-      description:
-        "Developed a comprehensive Python project that analyzes recently released movies using data visualization and statistical analysis. Provides insights into box office performance, ratings correlation, and trending patterns.",
-      image: "https://www.shutterstock.com/image-photo/retro-film-production-accessories-still-260nw-437672824.jpg",
-      tags: ["Python", "Matplotlib", "Pandas", "NumPy", "Seaborn"],
-      features: [
-        "Box office analysis",
-        "Rating correlation studies",
-        "Trend visualization",
-        "Performance metrics",
-        "Predictive modeling"
-      ]
-    },
-    {
-      title: "Movies Watch Platform",
-      description:
-        "Developed a modern streaming platform where users can discover recently released movies, view ratings and reviews, and manage a personalized watchlist. Features responsive design and intuitive user experience.",
-      image: "https://user-images.githubusercontent.com/106135144/196727097-50c0ae49-b92f-4aa9-bdcb-30d978a44125.png",
-      tags: ["React", "Tailwind CSS", "JavaScript", "API Integration"],
-      features: [
-        "Movie discovery interface",
-        "Personal watchlist management",
-        "Rating and review system",
-        "Responsive design",
-        "Search and filter options"
-      ]
-    },
-  ]
+ const projects = [
+  {
+    title: "Placement Portal",
+    description:
+      "A full-stack portal built to streamline campus placements for over 500 students and 100+ companies. Features real-time application tracking, CGPA-based eligibility checks, and resume uploads, improving coordination by 30%. [Test Details for Portal: Registration Number: AP23110011340 PassWord: 05-03-2001]",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgrXYyF-J7ZA-gABudMyhVBM23d9nCxlaDw&s",
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    features: [
+      "Real-time application tracking",
+      "CGPA validation system",
+      "Resume upload functionality",
+      "Admin dashboard for companies",
+      "Student performance analytics"
+    ],
+    demo: "https://placementportal.42web.io/?i=1",  // Replace with actual URL
+    code: "https://github.com/Mounika-Chowdary28/Placement_Portal"
+  },
+  {
+    title: "BookStore Management",
+    description:
+      "A web-based system for managing book inventory, customer orders, and sales insights. Optimizes bookstore operations through automated stock updates and a user-friendly order summary interface.",
+    image: "https://static.vecteezy.com/system/resources/previews/015/411/157/non_2x/a-bookstore-with-a-sign-over-the-entrance-books-in-the-shop-window-on-the-shelves-street-store-illustration-flat-style-vector.jpg",
+    tags: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
+    features: [
+      "Book inventory management",
+      "Order tracking dashboard",
+      "Sales reporting and analytics",
+      "Customer and cart management",
+      "Dynamic product listings"
+    ],
+    demo: "https://bookstoremanagement.42web.io",  // Replace with actual URL
+    code: "https://github.com/Mounika-Chowdary28/Bookstore"
+  },
+  {
+    title: "Movie Analyzer",
+    description:
+      "A data analysis tool developed in Python that visualizes and explores trends in box office performance, ratings, and movie metrics using advanced statistical techniques.",
+    image: "https://www.shutterstock.com/image-photo/retro-film-production-accessories-still-260nw-437672824.jpg",
+    tags: ["Python", "Matplotlib", "Pandas", "NumPy", "Seaborn"],
+    features: [
+      "Box office performance charts",
+      "Rating correlation heatmaps",
+      "Genre and trend visualizations",
+      "Performance metric analysis",
+      "Basic predictive modeling"
+    ],
+    demo: "https://github.com/Mounika-Chowdary28/python_project",  // GitHub as demo for Python
+    code: "https://github.com/Mounika-Chowdary28/python_project"
+  },
+  {
+    title: "Movies Watch Platform",
+    description:
+      "A React-based movie streaming discovery platform where users can browse the latest releases, view details, and curate a personalized watchlist with a smooth and responsive UI.",
+    image: "https://user-images.githubusercontent.com/106135144/196727097-50c0ae49-b92f-4aa9-bdcb-30d978a44125.png",
+    tags: ["React", "Tailwind CSS", "JavaScript", "API Integration"],
+    features: [
+      "Latest movie discovery and previews",
+      "Custom watchlist functionality",
+      "Ratings and review display",
+      "Search and genre-based filtering",
+      "Mobile-friendly responsive design"
+    ],
+    demo: "https://github.com/Mounika-Chowdary28/Movies-Watchlist",  // Replace with actual URL
+    code: "https://github.com/Mounika-Chowdary28/Movies-Watchlist"
+  }
+];
+
 
   const experiences = [
     {
@@ -440,15 +449,27 @@ const Portfolio = () => {
 
                     {/* Action Buttons */}
                     <div className="flex gap-4">
-                      <Button variant="outline">
-                        <ExternalLink className="mr-2 h-4 w-4" />
-                        Live Demo
-                      </Button>
-                      <Button variant="ghost">
-                        <Github className="mr-2 h-4 w-4" />
-                        Code
-                      </Button>
-                    </div>
+  <a
+    href={project.demo}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Button variant="outline">
+      <ExternalLink className="mr-2 h-4 w-4" />
+      Live Demo
+    </Button>
+  </a>
+  <a
+    href={project.code}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Button variant="ghost">
+      <Github className="mr-2 h-4 w-4" />
+      Code
+    </Button>
+  </a>
+</div>
                   </CardContent>
                 </div>
               </Card>
