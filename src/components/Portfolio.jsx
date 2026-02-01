@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Button from "../components/ui/Button"
 import { Card, CardContent } from "../components/ui/Card"
 import Badge from "../components/ui/Badge"
-import profileImg from '../assets/Profile.jpeg';
+import profileImg from '../assets/profile.jpeg';
 import emailjs from "emailjs-com";
 import {
   Menu,
@@ -276,7 +276,7 @@ const Portfolio = () => {
                 Get In Touch
               </Button>
               </a>
-              <Button variant="outline" size="lg" onClick={() => window.open("https://drive.google.com/file/d/1xuT6jeE67WHGYtprtcPqALZS2ZIWEbeA/view?usp=sharing", "_blank")}>
+              <Button variant="outline" size="lg" onClick={() => window.open("https://drive.google.com/file/d/1mTKsPsqEihXZ1bLwyEd0F0bbiDEIezoe/view?usp=sharing", "_blank")}>
                 <Download className="mr-2 h-5 w-5" />
                 View Resume
               </Button>
