@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Button from "../components/ui/Button"
 import { Card, CardContent } from "../components/ui/Card"
 import Badge from "../components/ui/Badge"
-import profileImg from '../assets/profile.jpeg';
+import profileImg from '../assets/Profile.jpeg';
 import emailjs from "emailjs-com";
 import {
   Menu,
